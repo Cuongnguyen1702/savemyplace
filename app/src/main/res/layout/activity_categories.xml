@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    android:orientation="vertical"
+    tools:context=".activity.CategoriesActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutCategoriesAct_ATM"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/atm_background">
+
+        <ImageView
+           android:id="@+id/imgCategoriesAct_ATM"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginTop="16dp"
+           android:src="@drawable/atm"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCategoriesAct_ATM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="ATM"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/imgCategoriesAct_ATM"
+            app:layout_constraintTop_toBottomOf="@+id/imgCategoriesAct_ATM" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutCategoriesAct_Cinema"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/cinema_background"
+        >
+
+        <ImageView
+            android:id="@+id/imgCategoriesAct_Cinema"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/cinema"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCategoriesAct_Cinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Cinema"
+            app:layout_constraintEnd_toEndOf="@+id/imgCategoriesAct_Cinema"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/imgCategoriesAct_Cinema"
+            app:layout_constraintTop_toBottomOf="@+id/imgCategoriesAct_Cinema" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutCategoriesAct_Fashion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/fashion_background">
+
+        <ImageView
+            android:id="@+id/imgCategoriesAct_Fashion"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/fashion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCategoriesAct_Fashion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Fashion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/imgCategoriesAct_Fashion"
+            app:layout_constraintTop_toBottomOf="@+id/imgCategoriesAct_Fashion" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutCategoriesAct_Restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/restaurant_background">
+
+        <ImageView
+            android:id="@+id/imgCategoriesAct_Restaurant"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/restaurant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtCategoriesAct_Restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Restaurant"
+            app:layout_constraintEnd_toEndOf="@+id/imgCategoriesAct_Restaurant"
+            app:layout_constraintHorizontal_bias="0.015"
+            app:layout_constraintStart_toStartOf="@+id/imgCategoriesAct_Restaurant"
+            app:layout_constraintTop_toBottomOf="@+id/imgCategoriesAct_Restaurant" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

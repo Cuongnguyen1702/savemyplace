@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activity.PlaceActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlbPlace"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <ListView
+            android:id="@+id/lvPlacesAct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <TextView
+            android:id="@+id/txtPlaceAct_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_null"
+            />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabPlaceAct_AddNewPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_add"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btnPlaceAct_ShowAll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/text_show_all_places"
+        android:shadowColor="@color/colorPrimaryDark"/>
+
+
+</LinearLayout>

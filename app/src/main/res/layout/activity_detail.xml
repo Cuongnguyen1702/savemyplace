@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlbDetail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imgDetailAct_PlacePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtnDetail_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/imgDetailAct_PlacePicture"
+        app:layout_constraintStart_toEndOf="@+id/imgDetailAct_PlacePicture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/imgbtnDetail_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/imgDetailAct_PlacePicture"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtnDetail_Direction"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnDetail_Delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/imgbtnDetail_Direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/imgDetailAct_PlacePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_directions" />
+
+    <TextView
+        android:id="@+id/txtDetail_PlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_place_name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDetailAct_PlacePicture" />
+
+    <EditText
+        android:id="@+id/edtDetail_PlaceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail_PlaceName" />
+
+    <TextView
+        android:id="@+id/txtDetail_PlaceAddess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_place_address"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/edtDetail_PlaceName" />
+
+    <EditText
+        android:id="@+id/edtDetail_PlaceAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail_PlaceAddess" />
+
+    <TextView
+        android:id="@+id/txtDetail_PlaceDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_place_description"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/edtDetail_PlaceAddress" />
+
+    <EditText
+        android:id="@+id/edtDetail_PlaceDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail_PlaceDescription" />
+
+
+</android.support.constraint.ConstraintLayout>

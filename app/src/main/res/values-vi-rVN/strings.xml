@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Save My Place</string>
+    <string name="text_null">Không có sẵn dữ liệu</string>
+    <string name="text_show_all_places">Xem tất cả địa điểm</string>
+    <string name="text_place_name">Tên địa điểm</string>
+    <string name="text_place_address">Địa chỉ địa điểm</string>
+    <string name="text_place_description">Miêu tả địa điểm</string>
+    <string name="text_retrieving_data">Đang truy xuất dữ liệu...</string>
+    <string name="text_save">Lưu</string>
+    <string name="hint_fill_in_place_name">Điền vào tên địa điểm</string>
+    <string name="hint_fill_in_place_address">Điền vào địa chỉ địa điểm</string>
+    <string name="hint_fill_in_place_description">Điền vào miêu tả địa điểm</string>
+    <string name="warning_do_you_want_to_delete">Bạn muốn xoá?</string>
+    <string name="text_deleting">Đang xoá ...</string>
+    <string name="text_saving">Đang lưu ...</string>
+</resources>
